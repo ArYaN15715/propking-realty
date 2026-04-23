@@ -1,0 +1,31 @@
+{
+  "overview": "A modern, high-conversion real estate website for THE PROPKING REALTY, a trusted consultancy in Ahmedabad, Gujarat. Features a curated property listings grid, investment opportunities, client testimonials, a 5-step consultation process, lead capture forms, and a mobile-optimized experience — all built around a clean brand identity of deep blue and golden yellow.",
+  "features": [
+    "Hero section with stats and dual CTAs",
+    "12-15 demo property listings with filters (budget, location, type)",
+    "5-step How We Help process section",
+    "Client testimonials carousel",
+    "Serving Across Ahmedabad authority section",
+    "Tabbed lead capture form (Get Deals / Book Visit / Talk to Expert)",
+    "Investment Opportunities section",
+    "Recommended For You smart carousel",
+    "Project Comparison UI",
+    "Social Feed Preview",
+    "Accordion FAQ section",
+    "Floating WhatsApp button + sticky header CTA",
+    "Mobile sticky bottom bar (Call / WhatsApp / Properties)",
+    "Smooth scroll animations and micro-interactions",
+    "SEO meta tags and schema markup"
+  ],
+  "category": "real-estate",
+  "tags": [
+    "real-estate",
+    "ahmedabad",
+    "property",
+    "listings",
+    "lead-capture",
+    "consulting",
+    "mobile-first"
+  ],
+  "last_updated": "2026-04-23T08:26:20.623Z"
+}

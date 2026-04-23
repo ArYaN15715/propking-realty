@@ -1,0 +1,51 @@
+// Version: 1.0.0
+type LeadForm__119318576 =
+  {
+    budget : ?Text;
+    contactTime : ?Text;
+    email : Text;
+    formType : Text;
+    id : Nat;
+    location : ?Text;
+    message : ?Text;
+    name : Text;
+    phone : Text;
+    propertyType : ?Text;
+    timestamp : Timestamp__301639476;
+    visitDate : ?Text
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Property__615325142 =
+  {
+    amenities : [Text];
+    area : Nat;
+    bathrooms : Nat;
+    bedrooms : Nat;
+    description : Text;
+    id : Nat;
+    imageUrl : Text;
+    location : Text;
+    price : Nat;
+    priceDisplay : Text;
+    propertyType : Text;
+    status : Text;
+    tags : [Text];
+    title : Text
+  };
+type Timestamp__301639476 = Int;
+actor {
+  stable leads :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?LeadForm__119318576]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextLeadId : {var value : Nat};
+  stable properties :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Property__615325142]];
+      var elementIndex : Nat__490723111
+    }
+};

@@ -1,0 +1,55 @@
+type Timestamp = int;
+type Property = 
+ record {
+   amenities: vec text;
+   area: nat;
+   bathrooms: nat;
+   bedrooms: nat;
+   description: text;
+   id: nat;
+   imageUrl: text;
+   location: text;
+   price: nat;
+   priceDisplay: text;
+   propertyType: text;
+   status: text;
+   tags: vec text;
+   title: text;
+ };
+type LeadFormInput = 
+ record {
+   budget: opt text;
+   contactTime: opt text;
+   email: text;
+   formType: text;
+   location: opt text;
+   message: opt text;
+   name: text;
+   phone: text;
+   propertyType: opt text;
+   visitDate: opt text;
+ };
+type LeadForm = 
+ record {
+   budget: opt text;
+   contactTime: opt text;
+   email: text;
+   formType: text;
+   id: nat;
+   location: opt text;
+   message: opt text;
+   name: text;
+   phone: text;
+   propertyType: opt text;
+   timestamp: Timestamp;
+   visitDate: opt text;
+ };
+service : {
+  getLeads: () -> (vec LeadForm) query;
+  getProperties: () -> (vec Property) query;
+  getPropertiesByIds: (ids: vec nat) -> (vec Property) query;
+  getPropertiesByLocation: (location: text) -> (vec Property) query;
+  getPropertiesByType: (propertyType: text) -> (vec Property) query;
+  getPropertyById: (id: nat) -> (opt Property) query;
+  submitLead: (input: LeadFormInput) -> (nat);
+}
